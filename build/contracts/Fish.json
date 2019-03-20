@@ -1,0 +1,1919 @@
+{
+  "contractName": "Fish",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "players",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xf71d96cb"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor",
+      "signature": "constructor"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "jewel_count",
+          "type": "uint256"
+        },
+        {
+          "name": "toPalyer",
+          "type": "address"
+        }
+      ],
+      "name": "updateJewel",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function",
+      "signature": "0xcb404a0e"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "player",
+          "type": "address"
+        }
+      ],
+      "name": "getJewel",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xd81ee4b6"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getTest",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xa8cd0a80"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getCoinbase",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function",
+      "signature": "0xd1a82a9d"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5033600360006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506103fa806100616000396000f3fe60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063a8cd0a8014610072578063cb404a0e1461009d578063d1a82a9d146100f8578063d81ee4b61461014f578063f71d96cb146101b4575b600080fd5b34801561007e57600080fd5b5061008761022f565b6040518082815260200191505060405180910390f35b3480156100a957600080fd5b506100f6600480360360408110156100c057600080fd5b8101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610238565b005b34801561010457600080fd5b5061010d61031d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561015b57600080fd5b5061019e6004803603602081101561017257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610347565b6040518082815260200191505060405180910390f35b3480156101c057600080fd5b506101ed600480360360208110156101d757600080fd5b8101908080359060200190929190505050610390565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60006014905090565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561029457600080fd5b81600260008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205401600260008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055505050565b6000600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6000600260008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b60018181548110151561039f57fe5b906000526020600020016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea165627a7a72305820eb4d881524f3f8ec6a1621ffd72ba592ce728df35cbc7235998c16b165294f540029",
+  "deployedBytecode": "0x60806040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063a8cd0a8014610072578063cb404a0e1461009d578063d1a82a9d146100f8578063d81ee4b61461014f578063f71d96cb146101b4575b600080fd5b34801561007e57600080fd5b5061008761022f565b6040518082815260200191505060405180910390f35b3480156100a957600080fd5b506100f6600480360360408110156100c057600080fd5b8101908080359060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610238565b005b34801561010457600080fd5b5061010d61031d565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34801561015b57600080fd5b5061019e6004803603602081101561017257600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610347565b6040518082815260200191505060405180910390f35b3480156101c057600080fd5b506101ed600480360360208110156101d757600080fd5b8101908080359060200190929190505050610390565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b60006014905090565b600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614151561029457600080fd5b81600260008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020019081526020016000205401600260008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020819055505050565b6000600360009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b6000600260008373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020549050919050565b60018181548110151561039f57fe5b906000526020600020016000915054906101000a900473ffffffffffffffffffffffffffffffffffffffff168156fea165627a7a72305820eb4d881524f3f8ec6a1621ffd72ba592ce728df35cbc7235998c16b165294f540029",
+  "sourceMap": "35:699:0:-;;;179:59;8:9:-1;5:2;;;30:1;27;20:12;5:2;179:59:0;220:10;209:8;;:21;;;;;;;;;;;;;;;;;;35:699;;;;;;",
+  "deployedSourceMap": "35:699:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;561:76;;8:9:-1;5:2;;;30:1;27;20:12;5:2;561:76:0;;;;;;;;;;;;;;;;;;;;;;;244:191;;8:9:-1;5:2;;;30:1;27;20:12;5:2;244:191:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;244:191:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;643:86;;8:9:-1;5:2;;;30:1;27;20:12;5:2;643:86:0;;;;;;;;;;;;;;;;;;;;;;;;;;;443:110;;8:9:-1;5:2;;;30:1;27;20:12;5:2;443:110:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;443:110:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;76:25;;8:9:-1;5:2;;;30:1;27;20:12;5:2;76:25:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;76:25:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;561:76;601:7;627:2;620:9;;561:76;:::o;244:191::-;344:8;;;;;;;;;;;330:22;;:10;:22;;;322:31;;;;;;;;416:11;390:13;:23;404:8;390:23;;;;;;;;;;;;;;;;:37;364:13;:23;378:8;364:23;;;;;;;;;;;;;;;:63;;;;244:191;;:::o;643:86::-;687:7;713:8;;;;;;;;;;;706:15;;643:86;:::o;443:110::-;498:7;524:13;:21;538:6;524:21;;;;;;;;;;;;;;;;517:28;;443:110;;;:::o;76:25::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.22<0.6.0;\r\n\r\ncontract Fish {\r\n    uint256 jewel;\r\n    address [] public players;\r\n    mapping(address => uint256) players_jewel;\r\n    address coinbase;\r\n    constructor()public{\r\n        coinbase = msg.sender;\r\n    }\r\n    function updateJewel(uint256 jewel_count, address toPalyer) public {\r\n        require(msg.sender == coinbase);\r\n        players_jewel[toPalyer] = players_jewel[toPalyer] + jewel_count;\r\n    }\r\n\r\n    function getJewel(address player) public view returns (uint256){\r\n        return players_jewel[player];\r\n    }\r\n\r\n    function getTest() public view returns (uint256){\r\n        return 20;\r\n    }\r\n    function getCoinbase() public view returns (address){\r\n        return coinbase;\r\n    }\r\n\r\n}\r\n",
+  "sourcePath": "D:/test/contracts/Fish.sol",
+  "ast": {
+    "absolutePath": "/D/test/contracts/Fish.sol",
+    "exportedSymbols": {
+      "Fish": [
+        75
+      ]
+    },
+    "id": 76,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:31:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 75,
+        "linearizedBaseContracts": [
+          75
+        ],
+        "name": "Fish",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "jewel",
+            "nodeType": "VariableDeclaration",
+            "scope": 75,
+            "src": "56:13:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "56:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 6,
+            "name": "players",
+            "nodeType": "VariableDeclaration",
+            "scope": 75,
+            "src": "76:25:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_address_$dyn_storage",
+              "typeString": "address[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 4,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "76:7:0",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "id": 5,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "76:10:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                "typeString": "address[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 10,
+            "name": "players_jewel",
+            "nodeType": "VariableDeclaration",
+            "scope": 75,
+            "src": "108:41:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 9,
+              "keyType": {
+                "id": 7,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "116:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "108:27:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 8,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "127:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 12,
+            "name": "coinbase",
+            "nodeType": "VariableDeclaration",
+            "scope": 75,
+            "src": "156:16:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 11,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "156:7:0",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 20,
+              "nodeType": "Block",
+              "src": "198:40:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 18,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 15,
+                      "name": "coinbase",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12,
+                      "src": "209:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 16,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 147,
+                        "src": "220:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 17,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "220:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "209:21:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 19,
+                  "nodeType": "ExpressionStatement",
+                  "src": "209:21:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 21,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "190:2:0"
+            },
+            "returnParameters": {
+              "id": 14,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "198:0:0"
+            },
+            "scope": 75,
+            "src": "179:59:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 45,
+              "nodeType": "Block",
+              "src": "311:124:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 32,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 29,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 147,
+                            "src": "330:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 30,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "330:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 31,
+                          "name": "coinbase",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12,
+                          "src": "344:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "330:22:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 28,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        150,
+                        151
+                      ],
+                      "referencedDeclaration": 150,
+                      "src": "322:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 33,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "322:31:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 34,
+                  "nodeType": "ExpressionStatement",
+                  "src": "322:31:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 43,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 35,
+                        "name": "players_jewel",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10,
+                        "src": "364:13:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                          "typeString": "mapping(address => uint256)"
+                        }
+                      },
+                      "id": 37,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 36,
+                        "name": "toPalyer",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 25,
+                        "src": "378:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "364:23:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 42,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 38,
+                          "name": "players_jewel",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10,
+                          "src": "390:13:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                            "typeString": "mapping(address => uint256)"
+                          }
+                        },
+                        "id": 40,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 39,
+                          "name": "toPalyer",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 25,
+                          "src": "404:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "390:23:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "id": 41,
+                        "name": "jewel_count",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 23,
+                        "src": "416:11:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "390:37:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "364:63:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 44,
+                  "nodeType": "ExpressionStatement",
+                  "src": "364:63:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 46,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateJewel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 26,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 23,
+                  "name": "jewel_count",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46,
+                  "src": "265:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "265:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 25,
+                  "name": "toPalyer",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46,
+                  "src": "286:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 24,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "286:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "264:39:0"
+            },
+            "returnParameters": {
+              "id": 27,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "311:0:0"
+            },
+            "scope": 75,
+            "src": "244:191:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 57,
+              "nodeType": "Block",
+              "src": "506:47:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 53,
+                      "name": "players_jewel",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10,
+                      "src": "524:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                        "typeString": "mapping(address => uint256)"
+                      }
+                    },
+                    "id": 55,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 54,
+                      "name": "player",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 48,
+                      "src": "538:6:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "524:21:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 52,
+                  "id": 56,
+                  "nodeType": "Return",
+                  "src": "517:28:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 58,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getJewel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 49,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48,
+                  "name": "player",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 58,
+                  "src": "461:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 47,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "461:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "460:16:0"
+            },
+            "returnParameters": {
+              "id": 52,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 58,
+                  "src": "498:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 50,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "498:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "497:9:0"
+            },
+            "scope": 75,
+            "src": "443:110:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 65,
+              "nodeType": "Block",
+              "src": "609:28:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "3230",
+                    "id": 63,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "627:2:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_20_by_1",
+                      "typeString": "int_const 20"
+                    },
+                    "value": "20"
+                  },
+                  "functionReturnParameters": 62,
+                  "id": 64,
+                  "nodeType": "Return",
+                  "src": "620:9:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 66,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTest",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "577:2:0"
+            },
+            "returnParameters": {
+              "id": 62,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 61,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 66,
+                  "src": "601:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "601:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "600:9:0"
+            },
+            "scope": 75,
+            "src": "561:76:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 73,
+              "nodeType": "Block",
+              "src": "695:34:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 71,
+                    "name": "coinbase",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 12,
+                    "src": "713:8:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 70,
+                  "id": 72,
+                  "nodeType": "Return",
+                  "src": "706:15:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 74,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCoinbase",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 67,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "663:2:0"
+            },
+            "returnParameters": {
+              "id": 70,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 69,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 74,
+                  "src": "687:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 68,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "687:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "686:9:0"
+            },
+            "scope": 75,
+            "src": "643:86:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 76,
+        "src": "35:699:0"
+      }
+    ],
+    "src": "0:736:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/D/test/contracts/Fish.sol",
+    "exportedSymbols": {
+      "Fish": [
+        75
+      ]
+    },
+    "id": 76,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".22",
+          "<",
+          "0.6",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:31:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 75,
+        "linearizedBaseContracts": [
+          75
+        ],
+        "name": "Fish",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 3,
+            "name": "jewel",
+            "nodeType": "VariableDeclaration",
+            "scope": 75,
+            "src": "56:13:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 2,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "56:7:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 6,
+            "name": "players",
+            "nodeType": "VariableDeclaration",
+            "scope": 75,
+            "src": "76:25:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_address_$dyn_storage",
+              "typeString": "address[]"
+            },
+            "typeName": {
+              "baseType": {
+                "id": 4,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "76:7:0",
+                "stateMutability": "nonpayable",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "id": 5,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "76:10:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                "typeString": "address[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 10,
+            "name": "players_jewel",
+            "nodeType": "VariableDeclaration",
+            "scope": 75,
+            "src": "108:41:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 9,
+              "keyType": {
+                "id": 7,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "116:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "108:27:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 8,
+                "name": "uint256",
+                "nodeType": "ElementaryTypeName",
+                "src": "127:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 12,
+            "name": "coinbase",
+            "nodeType": "VariableDeclaration",
+            "scope": 75,
+            "src": "156:16:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 11,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "156:7:0",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 20,
+              "nodeType": "Block",
+              "src": "198:40:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 18,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 15,
+                      "name": "coinbase",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 12,
+                      "src": "209:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 16,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 147,
+                        "src": "220:3:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 17,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "220:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address_payable",
+                        "typeString": "address payable"
+                      }
+                    },
+                    "src": "209:21:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 19,
+                  "nodeType": "ExpressionStatement",
+                  "src": "209:21:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 21,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "190:2:0"
+            },
+            "returnParameters": {
+              "id": 14,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "198:0:0"
+            },
+            "scope": 75,
+            "src": "179:59:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 45,
+              "nodeType": "Block",
+              "src": "311:124:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "commonType": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "id": 32,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 29,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 147,
+                            "src": "330:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 30,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "330:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address_payable",
+                            "typeString": "address payable"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "argumentTypes": null,
+                          "id": 31,
+                          "name": "coinbase",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 12,
+                          "src": "344:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "src": "330:22:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 28,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        150,
+                        151
+                      ],
+                      "referencedDeclaration": 150,
+                      "src": "322:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 33,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "322:31:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 34,
+                  "nodeType": "ExpressionStatement",
+                  "src": "322:31:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 43,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "baseExpression": {
+                        "argumentTypes": null,
+                        "id": 35,
+                        "name": "players_jewel",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 10,
+                        "src": "364:13:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                          "typeString": "mapping(address => uint256)"
+                        }
+                      },
+                      "id": 37,
+                      "indexExpression": {
+                        "argumentTypes": null,
+                        "id": 36,
+                        "name": "toPalyer",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 25,
+                        "src": "378:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "364:23:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "commonType": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      },
+                      "id": 42,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "leftExpression": {
+                        "argumentTypes": null,
+                        "baseExpression": {
+                          "argumentTypes": null,
+                          "id": 38,
+                          "name": "players_jewel",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 10,
+                          "src": "390:13:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                            "typeString": "mapping(address => uint256)"
+                          }
+                        },
+                        "id": 40,
+                        "indexExpression": {
+                          "argumentTypes": null,
+                          "id": 39,
+                          "name": "toPalyer",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 25,
+                          "src": "404:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "isConstant": false,
+                        "isLValue": true,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "nodeType": "IndexAccess",
+                        "src": "390:23:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "nodeType": "BinaryOperation",
+                      "operator": "+",
+                      "rightExpression": {
+                        "argumentTypes": null,
+                        "id": 41,
+                        "name": "jewel_count",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 23,
+                        "src": "416:11:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      },
+                      "src": "390:37:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "364:63:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 44,
+                  "nodeType": "ExpressionStatement",
+                  "src": "364:63:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 46,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "updateJewel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 26,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 23,
+                  "name": "jewel_count",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46,
+                  "src": "265:19:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 22,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "265:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 25,
+                  "name": "toPalyer",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46,
+                  "src": "286:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 24,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "286:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "264:39:0"
+            },
+            "returnParameters": {
+              "id": 27,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "311:0:0"
+            },
+            "scope": 75,
+            "src": "244:191:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 57,
+              "nodeType": "Block",
+              "src": "506:47:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "baseExpression": {
+                      "argumentTypes": null,
+                      "id": 53,
+                      "name": "players_jewel",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 10,
+                      "src": "524:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                        "typeString": "mapping(address => uint256)"
+                      }
+                    },
+                    "id": 55,
+                    "indexExpression": {
+                      "argumentTypes": null,
+                      "id": 54,
+                      "name": "player",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 48,
+                      "src": "538:6:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "IndexAccess",
+                    "src": "524:21:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 52,
+                  "id": 56,
+                  "nodeType": "Return",
+                  "src": "517:28:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 58,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getJewel",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 49,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48,
+                  "name": "player",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 58,
+                  "src": "461:14:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 47,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "461:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "460:16:0"
+            },
+            "returnParameters": {
+              "id": 52,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 51,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 58,
+                  "src": "498:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 50,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "498:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "497:9:0"
+            },
+            "scope": 75,
+            "src": "443:110:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 65,
+              "nodeType": "Block",
+              "src": "609:28:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "3230",
+                    "id": 63,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "number",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "627:2:0",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_rational_20_by_1",
+                      "typeString": "int_const 20"
+                    },
+                    "value": "20"
+                  },
+                  "functionReturnParameters": 62,
+                  "id": 64,
+                  "nodeType": "Return",
+                  "src": "620:9:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 66,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getTest",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "577:2:0"
+            },
+            "returnParameters": {
+              "id": 62,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 61,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 66,
+                  "src": "601:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "601:7:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "600:9:0"
+            },
+            "scope": 75,
+            "src": "561:76:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 73,
+              "nodeType": "Block",
+              "src": "695:34:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 71,
+                    "name": "coinbase",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 12,
+                    "src": "713:8:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "functionReturnParameters": 70,
+                  "id": 72,
+                  "nodeType": "Return",
+                  "src": "706:15:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 74,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getCoinbase",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 67,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "663:2:0"
+            },
+            "returnParameters": {
+              "id": 70,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 69,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 74,
+                  "src": "687:7:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 68,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "687:7:0",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "686:9:0"
+            },
+            "scope": 75,
+            "src": "643:86:0",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 76,
+        "src": "35:699:0"
+      }
+    ],
+    "src": "0:736:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xb0d0974ea326AbcE94912Cc5326786C6DC19B7E6",
+      "transactionHash": "0xb5dc81e60311e611b9f7e146f5db7b5a8980e3e405adebea018e12af60c32b48"
+    }
+  },
+  "schemaVersion": "3.0.2",
+  "updatedAt": "2019-03-20T07:31:10.284Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
