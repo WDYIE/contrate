@@ -35,6 +35,7 @@ function Contract() {
             console.log(result)
         });
     };
+    this.
     this.getJewel =async function ( accountAddr) {
 
 
